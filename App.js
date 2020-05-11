@@ -1,3 +1,3 @@
-import screens from "./src/screens"
+import Screens from "./src/screens"
 
-export default screens.TodoList;
+export default Screens;
