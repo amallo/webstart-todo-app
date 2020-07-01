@@ -1,8 +1,16 @@
+import React, { Component } from 'react'
+import { Provider } from 'react-redux';
+import { store } from "../store"
 import TodoList from "./todo-list"
 
-const screens = {
-    TodoList
+
+class Screens extends Component {
+    render() {
+        return (
+            <Provider store={store}>
+                <TodoList />
+            </Provider>
+        );
+    }
 }
-
-
-export default screens
+export default Screens
